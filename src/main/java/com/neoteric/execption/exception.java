@@ -9,8 +9,9 @@ public class exception {
         try{
             int i =  0;
             int j = 10/i;
-        }catch (Exception e){
-            System.out.println("exception caught: " + e.getMessage());
+        }catch (Exception e) {
+            System.out.println("Error occurred: cannot divide by zero");
+
         }
         System.out.println("hello3");
         System.out.println("hello4");
