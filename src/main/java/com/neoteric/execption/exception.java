@@ -2,6 +2,9 @@ package com.neoteric.execption;
 
 public class exception {
 
+    public exception(String message) {
+    }
+
     public static void main(String[] args) {
         System.out.println("hello1");
         System.out.println("hello2");
