@@ -28,7 +28,7 @@ public class Test {
 
             coustmer rahul = new coustmer("rahul");
             List<Orderitem>orderitems = Arrays.asList(
-                    new Orderitem(birayanihouse.getMenu().get(0),2),
+                    new Orderitem(birayanihouse.getMenu().get(0),1),
                     new Orderitem(birayanihouse.getMenu().get(1),1)
             );
             rahul.placeOrder(birayanihouse,orderitems,new UpiPayment());
