@@ -35,8 +35,9 @@ public class OrderTest {
                 .filter(o -> statusPredicte.test(o.getStatus()))
                 .count();
         System.out.println("deliveredcountstream" + deliveredcountstream);
-
-
+        orders.stream()
+                .filter(o->statusPredicte.negate().test(o.getStatus()))
+                .forEach(o->System.out.println(o.getId()+"  "+o.getStatus()));
 
     }
 }
